@@ -1,0 +1,17 @@
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\bin\Release\KutuphaneTakipProgrami.exe.manifest
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\bin\Release\KutuphaneTakipProgrami.application
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\bin\Release\KutuphaneTakipProgrami.exe
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\bin\Release\KutuphaneTakipProgrami.pdb
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.FormAnaEkran.resources
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.FormEmanetKitaplar.resources
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.FormKitapListele.resources
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.FormOkunanKitaplar.resources
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.FormUyeListele.resources
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.FormYeniKitapKaydet.resources
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.Properties.Resources.resources
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.FormYeniUyeKaydet.resources
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.csproj.GenerateResource.Cache
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.exe.manifest
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.application
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.exe
+C:\Users\ahmet\documents\visual studio 2010\Projects\KutuphaneTakipProgrami\KutuphaneTakipProgrami\obj\x86\Release\KutuphaneTakipProgrami.pdb

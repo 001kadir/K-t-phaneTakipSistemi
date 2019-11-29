@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDFBBB69-6B44-425D-84B8-0ED530513ACC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KutuphaneTakipProgrami</RootNamespace>
+    <AssemblyName>Kütüphane Takip Programı</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FEDBDBE6E5EE2A91EF266C0A0879644E3E13FBA6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KutuphaneTakipProgrami_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Core">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Web">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormKullaniciGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKullaniciGirisi.Designer.cs">
+      <DependentUpon>FormKullaniciGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKullaniciSifreGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKullaniciSifreGuncelle.Designer.cs">
+      <DependentUpon>FormKullaniciSifreGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPdfRaporTarihleriArasindaOkunanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPdfRaporTarihleriArasindaOkunanlar.Designer.cs">
+      <DependentUpon>FormPdfRaporTarihleriArasindaOkunanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPdfRaporEnCokOkunanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPdfRaporEnCokOkunanlar.Designer.cs">
+      <DependentUpon>FormPdfRaporEnCokOkunanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPdfRaporEnCokOkuyanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPdfRaporEnCokOkuyanlar.Designer.cs">
+      <DependentUpon>FormPdfRaporEnCokOkuyanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPdfRaporHasarliGetirenler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPdfRaporHasarliGetirenler.Designer.cs">
+      <DependentUpon>FormPdfRaporHasarliGetirenler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPdfRaporKitabiOkuyanUyeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPdfRaporKitabiOkuyanUyeler.Designer.cs">
+      <DependentUpon>FormPdfRaporKitabiOkuyanUyeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPdfRaporUyeninOkuduguKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPdfRaporUyeninOkuduguKitaplar.Designer.cs">
+      <DependentUpon>FormPdfRaporUyeninOkuduguKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporEnCokOkunanlar.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RaporEnCokOkunanlar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RaporEnCokOkuyanlar.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RaporEnCokOkuyanlar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RaporHasarliGetirenler.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RaporHasarliGetirenler.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RaporKitabiOkuyanUyeler.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RaporKitabiOkuyanUyeler.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RaporTarihleriArasindaOkunanlar.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RaporTarihleriArasindaOkunanlar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RaporUyeninOkuduguKitaplar.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RaporUyeninOkuduguKitaplar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Emanet.cs" />
+    <Compile Include="FormAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnaEkran.Designer.cs">
+      <DependentUpon>FormAnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmanetKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmanetKitaplar.Designer.cs">
+      <DependentUpon>FormEmanetKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKitapListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKitapListele.Designer.cs">
+      <DependentUpon>FormKitapListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOkunanKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOkunanKitaplar.Designer.cs">
+      <DependentUpon>FormOkunanKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUyeListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUyeListele.Designer.cs">
+      <DependentUpon>FormUyeListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYeniKitapKaydet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYeniKitapKaydet.Designer.cs">
+      <DependentUpon>FormYeniKitapKaydet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uyeler.cs" />
+    <Compile Include="FormYeniUyeKaydet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYeniUyeKaydet.Designer.cs">
+      <DependentUpon>FormYeniUyeKaydet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormKullaniciGirisi.resx">
+      <DependentUpon>FormKullaniciGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKullaniciSifreGuncelle.resx">
+      <DependentUpon>FormKullaniciSifreGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPdfRaporTarihleriArasindaOkunanlar.resx">
+      <DependentUpon>FormPdfRaporTarihleriArasindaOkunanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPdfRaporEnCokOkunanlar.resx">
+      <DependentUpon>FormPdfRaporEnCokOkunanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPdfRaporEnCokOkuyanlar.resx">
+      <DependentUpon>FormPdfRaporEnCokOkuyanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPdfRaporHasarliGetirenler.resx">
+      <DependentUpon>FormPdfRaporHasarliGetirenler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPdfRaporKitabiOkuyanUyeler.resx">
+      <DependentUpon>FormPdfRaporKitabiOkuyanUyeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPdfRaporUyeninOkuduguKitaplar.resx">
+      <DependentUpon>FormPdfRaporUyeninOkuduguKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporEnCokOkunanlar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RaporEnCokOkunanlar.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporEnCokOkuyanlar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RaporEnCokOkuyanlar.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporHasarliGetirenler.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RaporHasarliGetirenler.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporKitabiOkuyanUyeler.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RaporKitabiOkuyanUyeler.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporTarihleriArasindaOkunanlar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RaporTarihleriArasindaOkunanlar.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporUyeninOkuduguKitaplar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RaporUyeninOkuduguKitaplar.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAnaEkran.resx">
+      <DependentUpon>FormAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmanetKitaplar.resx">
+      <DependentUpon>FormEmanetKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKitapListele.resx">
+      <DependentUpon>FormKitapListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOkunanKitaplar.resx">
+      <DependentUpon>FormOkunanKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUyeListele.resx">
+      <DependentUpon>FormUyeListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYeniKitapKaydet.resx">
+      <DependentUpon>FormYeniKitapKaydet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FormYeniUyeKaydet.resx">
+      <DependentUpon>FormYeniUyeKaydet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\KutuphaneDB.sql" />
+    <None Include="Resources\user-password-icon.png" />
+    <None Include="Resources\Kütüphane Takip Programı.png" />
+    <None Include="Resources\Books-2-icon1.png" />
+    <None Include="Resources\Books-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.ConnectionInfo">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Diagnostics.STrace">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Dmf">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.Sdk.Sfc">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SmoMetadataProvider">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SqlParser">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.ServiceBrokerEnum">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Smo">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlClrProvider">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlEnum">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
